@@ -1,0 +1,24 @@
+
+           // int[] a = { 1, 2, 3, 4, 5 };
+           // foreach (int i in a)
+           // {
+           //     Console.WriteLine(i);
+           // }
+
+           // int[] b= new int[2];
+           // b[0] = 23;
+           //// b[4] = 22;
+           // Console.WriteLine(b[0]);
+           // // Console.WriteLine(b[4]);
+
+
+            int[,] c = { { 1,2}, { 3,4} };
+            for (int i = 0; i < c.GetLength(0); i++)
+            {
+                for (int j = 0; j < c.GetLength(1); j++)
+                {
+                    Console.Write(c[i, j] + " ");
+                }
+                //Console.WriteLine();
+            }
+           
