@@ -21,4 +21,20 @@
                 }
                 //Console.WriteLine();
             }
+---Adding the values in each row
+
+             int[,] c = { { 1,2}, { 3,4} };
+             int temp = 0;
+             for (int i = 0; i < c.GetLength(0); i++)
+             {
+                 for (int j = 0; j < c.GetLength(1); j++)
+                 {
+                     temp += c[i,j];
+                    // Console.Write(c[i, j] + " ");
+                    
+                 }
+                 Console.WriteLine(temp);
+                 temp = 0;
+                 //Console.WriteLine();
+             }
            
