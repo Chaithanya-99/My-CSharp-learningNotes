@@ -1,0 +1,6 @@
+Static Fields		public  Static int NumberOfCars=0					
+Static Properties		public string Name { get; set; }					
+Static Methods							
+static Construcutres							
+Static classes		public static class name of class{methods}					
+Static keyword ne method lo vadanappudu  object ne create cheyali							
