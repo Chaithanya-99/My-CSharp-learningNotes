@@ -1,0 +1,56 @@
+--oka vela input ga em ivvakunte method lo edaithe default ga e value aithe assign chestamo ade vasthundi
+
+                              //Properties
+                      public string Name { get; set; }
+              
+                      public int Id { get; set; }
+              
+                      public int Classs { get; set; }
+                      //default constructure
+                      public constructureclass()
+                      {
+                          Console.WriteLine("not a valid student");
+                      }
+              
+                      //custom constructure
+                      public constructureclass(string name, int id, int classs)
+                      {
+                          Name = name;
+                          Id = id;
+                          Classs = classs;
+                          Console.WriteLine($"Name is :{Name}, Id is: {Id},class is:{Classs}");
+                      }
+                      //multiple constructureclass with same name and different inputs
+                      //ctos tab tab to get constructure syntax
+                      public constructureclass(string name)
+                      {
+                              Name=name;
+                         Console.WriteLine($"Name is :{Name}");
+                      }
+                      //Below is a method inside a Class
+                      //public void studentdet()
+                      //{
+                      //    Console.WriteLine($"Hi this is{Name} and my id is {Id}");
+                      //}
+              
+                      public void studentdet(string name, int id, int classs = 1100)
+                      {
+                          Name = name;
+                          Id = id;
+                          Classs = classs;
+              
+                          Console.WriteLine($"Hi this is{Name} , my id is {Id} and I'M from {Classs}");
+                      }
+--calling
+                      static void Main(string[] args)
+                    {
+                    
+                    
+                          //constructureclass my = new constructureclass("chaithanya");
+                          //my.studentdet();
+                    
+                          constructureclass my = new constructureclass("chaithanya", 15, 10);
+                          my.studentdet("chaithanya", 15);
+                    
+                      }//main end
+                    
