@@ -46,6 +46,11 @@ namespace Cshaarp_Learning
         {
             Console.WriteLine($"Name is :{Name}, Id is: {_stuid},class is:{Classs}");
         }
+        //Id_key_only_and_read_only m = new Id_key_only_and_read_only("pola");
+        //Id_key_only_and_read_only m1 = new Id_key_only_and_read_only("Chaithanya");
+
+        //m.getdetails();
+        //m1.getdetails();
 
     }
 }
