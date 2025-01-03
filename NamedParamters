@@ -1,0 +1,15 @@
+--values ne intialize chese appudu dani variables kuda ivvadam
+        static void Main(string[] args)	
+	
+        {//main start	
+            //ila ivvadam valla e variable ke e value istunnamo telistundi	
+             Console.WriteLine(add(a: 10, b: 25));	
+	
+            Console.WriteLine(add(10, b: 25));	
+            Console.WriteLine(add(a: 10,25));	
+	
+        }//main end	
+        public static int add(int a, int b)	
+        {	
+            return a + b;	
+        }	
