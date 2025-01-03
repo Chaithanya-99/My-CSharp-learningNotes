@@ -1,0 +1,22 @@
+-- computed properties ante method execute avvali ante both input values compulsory 
+--only get use cheasamu kabbati set ne execute cheyalemu
+               internal class commom	
+                {	
+                    public double lengthh { get; set; }	
+                    public double breadthh { get; set; } 	
+                    //computed properties ante method execute avvali ante both input values compulsory 	
+                    //only get use cheasamu kabbati set ne execute cheyalemu	
+                    public  double Area	
+                    {	
+                        get	
+                        {	
+                            return lengthh * breadthh;	
+                        }	
+--calling
+          commom n=new commom();	
+            n.lengthh = 10;	
+            n.breadthh = 10;	
+            Console.WriteLine(n.Area);	
+	
+            //only get matrame vadam kabatti set cheyali ani chuste error vasthundi	
+            n.Area = 200;	
