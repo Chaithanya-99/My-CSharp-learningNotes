@@ -59,30 +59,52 @@
 
 
 --Difference between arrays and lists
-          //arrays lo size fix inappdu danni minchi values madyalo add acheyalemu
-          int[] a = new int[5]{ 1, 2, 3, 4, 5 };
-          foreach (int i in a)
-          {
-              Console.WriteLine(i);
-          }
-        //  a[5] = 10;
-          foreach (int i in a)
-          {
-              Console.WriteLine(i);
-          }
-          //kani list lo data ke tagattu size perugutu pothundi
-        
-          List<int> b = new List<int> { 1,2,3};
-          foreach (int i in b)
-          {
-              Console.WriteLine("list before add");
-              Console.WriteLine(i);
-           
-          }
-          b.Add(10);
-          foreach (int i in b)
-          {
-              Console.WriteLine("list after add");
-              Console.WriteLine(i);
-             
-          }
+                      //arrays lo size fix inappdu danni minchi values madyalo add acheyalemu
+                      int[] a = new int[5]{ 1, 2, 3, 4, 5 };
+                      foreach (int i in a)
+                      {
+                          Console.WriteLine(i);
+                      }
+                    //  a[5] = 10;
+                      foreach (int i in a)
+                      {
+                          Console.WriteLine(i);
+                      }
+                      //kani list lo data ke tagattu size perugutu pothundi
+                    
+                      List<int> b = new List<int> { 1,2,3};
+                      foreach (int i in b)
+                      {
+                          Console.WriteLine("list before add");
+                          Console.WriteLine(i);
+                       
+                      }
+                      b.Add(10);
+                      foreach (int i in b)
+                      {
+                          Console.WriteLine("list after add");
+                          Console.WriteLine(i);
+                         
+                      }
+--Array with complex objects
+
+                     public class details
+                     {
+                         public int id { get; set; }
+                         public string Name { get; set; }
+                     }
+                     static void Main(string[] args)
+                     {
+                         details[] d = new details[]
+                         {
+                             new details{id= 100, Name ="pola"},
+                             new details{ id=101, Name="sai"}
+                    
+                    
+                         };
+                         foreach (details d2 in d)
+                         {
+                             Console.WriteLine(d2.Name + "  " + d2.id);
+                    
+                         }
+                         Console.ReadLine(); 
