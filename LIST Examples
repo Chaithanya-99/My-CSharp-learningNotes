@@ -36,3 +36,53 @@
                     }//class end
                 }//namespace end
 --Using list with Complex Objects
+                                            List<details> details = new List<details>
+                                            {
+                                             new details{id = 100,Name = "Pola"},
+                                             new details{id =102,Name = "Chaithanya"},
+                                            };
+                                
+                                            details.Add(new details { id = 101, Name = "sai" });
+                                            //details.Sort(details.id);
+                                            foreach (var item in details)
+                                            {
+                                                Console.WriteLine(item.id+ item.Name);
+                                              
+                                            }
+                                
+                                            Console.ReadLine(); 
+
+
+
+
+
+
+
+--Difference between arrays and lists
+          //arrays lo size fix inappdu danni minchi values madyalo add acheyalemu
+          int[] a = new int[5]{ 1, 2, 3, 4, 5 };
+          foreach (int i in a)
+          {
+              Console.WriteLine(i);
+          }
+        //  a[5] = 10;
+          foreach (int i in a)
+          {
+              Console.WriteLine(i);
+          }
+          //kani list lo data ke tagattu size perugutu pothundi
+        
+          List<int> b = new List<int> { 1,2,3};
+          foreach (int i in b)
+          {
+              Console.WriteLine("list before add");
+              Console.WriteLine(i);
+           
+          }
+          b.Add(10);
+          foreach (int i in b)
+          {
+              Console.WriteLine("list after add");
+              Console.WriteLine(i);
+             
+          }
